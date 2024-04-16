@@ -1,0 +1,256 @@
+* {
+  text-transform: lowercase;
+
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+:root {
+  --box-width: 600px;
+}
+
+body {
+  font-family: "Segoe UI";
+
+  margin: 0;
+
+  padding: 0;
+
+  background: #0a0a0a;
+
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%201024%201024%22%20width%3D%221024%22%20height%3D%221024%22%20preserveAspectRatio%3D%22none%22%3E%20%3Cstyle%3E%20path%20%7B%20stroke-linecap%3A%20square%3B%20stroke-width%3A%201.01px%3B%20stroke%3A%20%23D3D3D3%3B%20vector-effect%3A%20non-scaling-stroke%3B%20%7D%20%3C%2Fstyle%3E%20%3Cpath%20d%3D%22M%20256%20192%20L%20256%20320%20M%20192%20256%20L%20320%20256%22%20%2F%3E%20%3Cpath%20d%3D%22M%20768%20704%20L%20768%20832%20M%20704%20768%20L%20832%20768%22%20%2F%3E%3C%2Fsvg%3E"),
+    url("/assets/img/bg.jpg");
+
+  background-size: 169px, cover;
+
+  background-position: center, left;
+
+  background-repeat: repeat, no-repeat;
+}
+
+.container {
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  justify-content: center;
+
+  height: 100vh;
+}
+
+/* Styles for Box 2 */
+
+.box2 {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+
+  width: var(--box-width);
+
+  background-color: #ededed;
+
+  border: none;
+  border-radius: 10px;
+
+  padding: 20px;
+  height: 300px;
+  color: #2d2d2d;
+  display: flex;
+  z-index: 2;
+
+  position: relative;
+}
+
+.box2 img {
+  position: absolute;
+  width: 320px;
+  left: 400px;
+  bottom: 0px;
+}
+
+.input {
+  position: absolute;
+  bottom: 50px;
+}
+
+.input p {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+label {
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="password"],
+.input button {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+i {
+  margin-right: 150px;
+}
+
+.box2 h2 {
+  margin-top: 0;
+}
+
+.left {
+  position: absolute;
+
+  top: 350px;
+
+  right: 10px;
+
+  z-index: 999;
+
+  display: flex;
+
+  flex-direction: column;
+}
+
+.button {
+  margin-bottom: 20px;
+  padding: 11px;
+  font-family: "IBM";
+  text-decoration: none;
+  text-align: right;
+  letter-spacing: 5px;
+  width: 250px;
+  background-color: #2d2d2d;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #575757;
+
+  transition: 300ms;
+
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.red {
+  color: #ededed;
+
+  background-color: #d85d62;
+
+  padding-left: 10px;
+
+  padding-right: 10px;
+
+  padding-top: 2px;
+
+  padding-bottom: 2px;
+
+  border: 1px #d85d62;
+
+  font-size: 15px;
+
+  font-family: "Lucida Console", Monaco, monospace;
+
+  border-radius: 3px;
+}
+
+.black {
+  color: #ededed;
+
+  background-color: #2d2d2d;
+
+  padding-left: 10px;
+
+  padding-right: 10px;
+
+  padding-top: 2px;
+
+  padding-bottom: 2px;
+
+  border: 1px #2d2d2d;
+
+  border-radius: 3px;
+}
+
+.greenTxt {
+  color: #377158;
+}
+
+.redTxt {
+  color: #d85d62;
+}
+
+@font-face {
+  font-family: "Overpass";
+
+  src: url("/assets/fonts/OverpassMono-VariableFont_wght.ttf")
+    format("truetype");
+}
+
+@font-face {
+  font-family: "IBM";
+
+  src: url("/assets/fonts/IBMPlexMono-Regular.ttf") format("truetype");
+}
+
+@media only screen and (max-width: 600px) {
+  :root {
+    --box-width: 330px;
+  }
+
+  .box2 img {
+    width: 190px;
+
+    left: 182px;
+    z-index: -99;
+  }
+  .input {
+    position: absolute;
+    bottom: 10px;
+  }
+
+  label {
+    font-weight: bold;
+    font-size: 15.1px;
+  }
+
+  h1 {
+    font-size: 30px;
+  }
+
+  input[type="text"],
+  input[type="password"],
+  .input button {
+    width: 73%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+  .button {
+    margin-bottom: 20px;
+    padding: 0px;
+    font-family: "IBM";
+    text-decoration: none;
+    text-align: right;
+    letter-spacing: 5px;
+    width: 50px;
+    background-color: #2d2d2d;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  i {
+    position: absolute;
+    right: 90px;
+  }
+}

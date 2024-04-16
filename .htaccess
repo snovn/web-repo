@@ -1,0 +1,43 @@
+
+# HTID:23024270: DO NOT REMOVE OR MODIFY THIS LINE AND THE LINES BELOW
+Options All -Indexes
+
+DirectoryIndex index.php index.htm index.html
+
+RewriteEngine on
+RewriteBase /
+
+# Remove www from the URL
+RewriteCond %{HTTP_HOST} ^www\.(.*)$ [NC]
+RewriteRule ^(.*)$ http://%1/$1 [R=301,L]
+
+# Force HTTPS (if you have an SSL certificate installed)
+# RewriteCond %{HTTPS} off
+# RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# Handle trailing slashes
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)/$ /$1 [L,R=301]
+RewriteRule ^home$ /index.php [L]
+RewriteRule ^login$ /login.php [L]
+RewriteRule ^kys$ /kys.html [L]
+RewriteRule ^nsfw$ /nsfw.html [L]
+RewriteRule ^dash$ /dash.php [L]
+RewriteRule ^xan$ /xan.html [L]
+RewriteRule ^test$ /test.php [L]
+RewriteRule ^more$ /kys.html [L]
+RewriteRule ^pluto$ /pluto.html [L]
+
+# Handle all error documents
+ErrorDocument 400 /error/404.html
+ErrorDocument 401 /error/401.html
+ErrorDocument 403 /error/403.html
+ErrorDocument 404 /error/404.html
+ErrorDocument 500 /error/500.html
+
+
+<Files "ip_addresses.csv">
+    Order Allow,Deny
+    Deny from all
+</Files>
+

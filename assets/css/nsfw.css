@@ -1,0 +1,197 @@
+:root {
+  --box-width: 500px;
+}
+
+body {
+  overflow: hidden;
+}
+.container {
+  position: relative;
+}
+.top {
+  width: 100%;
+  border-top-left-radius: 10px;
+  max-width: var(--box-width);
+  height: 90px;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.4) 0%,
+      rgba(0, 0, 0, 0) 50%
+    ),
+    url("/assets/img/banner3.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  position: relative;
+
+  color: #2d2d2d;
+  font-weight: bold;
+}
+
+.top p {
+  position: absolute;
+  background-color: white;
+  font-size: 30px;
+  max-width: 100%;
+  padding-right: 20px;
+  padding-left: 10px;
+  letter-spacing: 10px;
+  border: none;
+  border-top-right-radius: 30px;
+
+  height: 50px;
+  top: 10px;
+  color: #2d2d2d;
+}
+
+.form {
+  background-color: white;
+  width: 100%;
+  height: 400px;
+
+  max-width: var(--box-width);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Box shadow */
+}
+
+.anime {
+  width: 180px;
+  z-index: -99;
+  margin-left: 315px;
+  margin-top: 5px;
+}
+.edgar {
+  width: 300px;
+  position: relative;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  bottom: 450px;
+  border: none;
+  border-radius: 10px;
+  right: -10px;
+}
+
+.form p {
+  padding-left: 10px;
+  position: relative;
+  bottom: 450px;
+}
+
+.form i {
+  position: absolute;
+  left: 20px;
+  top: 12px;
+}
+
+.bottom {
+  width: 100%;
+  max-width: var(--box-width);
+  background-color: #2d2d2d;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Box shadow */
+  display: flex;
+  color: #ededed;
+  position: relative;
+}
+
+.bottom a {
+  padding-left: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: white;
+}
+
+.pay {
+  padding: 11px;
+  padding-left: 170px;
+  font-family: "IBM";
+
+  text-decoration: none;
+
+  text-align: right;
+
+  letter-spacing: 5px;
+
+  background-color: #2d2d2d;
+
+  border-radius: 50px;
+
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+
+  color: #fff;
+
+  border: none;
+
+  cursor: pointer;
+  position: relative;
+
+  bottom: 400px;
+}
+
+.pay:hover {
+  background-color: #1d6cff;
+
+  transition: 300ms;
+
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.btnPay {
+  padding-left: 10px;
+  position: relative;
+
+  bottom: 0px;
+}
+
+.fool {
+  font-size: 30px;
+  font-weight: bolder;
+  padding: 10px;
+
+  background-color: #2d2d2d;
+  width: 250px;
+  color: #ededed;
+}
+@media only screen and (max-width: 600px) {
+  :root {
+    --box-width: 363px;
+  }
+  .top p {
+    font-size: 20px;
+    top: 40px;
+  }
+
+  .size {
+    font-size: 10px;
+    top: -400px;
+    font-weight: bold;
+  }
+  .fool {
+    font-size: 22px;
+    width: 160px;
+    top: -420px;
+  }
+
+  .anime {
+    width: 160px;
+    z-index: 200;
+    margin-left: 205px;
+    margin-top: 50px;
+  }
+
+  .edgar {
+    width: 250px;
+    position: relative;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    bottom: 370px;
+    border: none;
+    border-radius: 10px;
+    right: -10px;
+  }
+  .pay {
+    padding: 11px;
+    padding-left: 50px;
+
+    bottom: 325px;
+  }
+  .bottom {
+    font-size: 13px;
+  }
+}

@@ -1,1 +1,352 @@
-* {  text-transform: lowercase;  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);}:root {  --box-width: 600px;}body {  font-family: "Segoe UI", Arial, sans-serif;  margin: 0;  padding: 0;  background: #0a0a0a;  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%201024%201024%22%20width%3D%221024%22%20height%3D%221024%22%20preserveAspectRatio%3D%22none%22%3E%20%3Cstyle%3E%20path%20%7B%20stroke-linecap%3A%20square%3B%20stroke-width%3A%201.01px%3B%20stroke%3A%20%23D3D3D3%3B%20vector-effect%3A%20non-scaling-stroke%3B%20%7D%20%3C%2Fstyle%3E%20%3Cpath%20d%3D%22M%20256%20192%20L%20256%20320%20M%20192%20256%20L%20320%20256%22%20%2F%3E%20%3Cpath%20d%3D%22M%20768%20704%20L%20768%20832%20M%20704%20768%20L%20832%20768%22%20%2F%3E%3C%2Fsvg%3E"),    url("/assets/img/bg.jpg");  background-size: 169px, cover;  background-position: center, left;  background-repeat: repeat, no-repeat;}.container {  display: flex;  flex-direction: column;  align-items: center;  justify-content: center;  height: 100vh;}.box1 {  width: var(--box-width);  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Box shadow */  color: #ededed;  background-color: #2d2d2d;  border: 1px solid #2d2d2d;  border-top-left-radius: 10px;  padding-left: 20px;  align-items: center;  padding-right: 20px;  padding-top: 5px;  font-family: "Overpass";  padding-bottom: 5px;  position: relative;  display: flex;}.box1 h1 {  margin: 0;}.box1 p {  margin-bottom: 0;}/* Styles for Box 2 */.box2 {  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);  width: var(--box-width);  background-color: #ededed;  border: 1px solid #ccc;  padding: 20px;  color: #2d2d2d;  z-index: 2;  /*background-image: url(heart.webp);    background-size: 50%;    background-repeat: no-repeat;    background-position: right top;  */  position: relative;}.box2 h2 {  margin-top: 0;}.left {  position: absolute;  top: 350px;  right: 10px;  z-index: 999;  display: flex;  flex-direction: column;}.button {  margin-bottom: 20px;  padding: 11px;  font-family: "IBM";  text-decoration: none;  text-align: right;  letter-spacing: 5px;  width: 250px;  background-color: #2d2d2d;  border-radius: 50px;  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);  color: #fff;  border: none;  cursor: pointer;}.button:hover {  background-color: #575757;  transition: 300ms;  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);}.box-content2 {  margin-right: 160px;  bottom: 0px;  position: relative;}.box-footer2 {  position: absolute;  bottom: 0;  left: 0;  width: 100%;  font-family: "Overpass";  letter-spacing: 2px;  background-color: #333;  padding: 10px;  color: #fff;  box-shadow: 0 0 20px 10px rgba(255, 255, 255, 0.7);}.box-content2 img {  width: 317px;  margin-top: 5px;}.box3 {  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);  width: var(--box-width);  color: white;  padding-left: 20px; /* Adjusted padding */  padding-right: 20px; /* Adjusted padding */  margin-bottom: 10px;  background-color: #2d2d2d;  border: 1px solid #2d2d2d;  position: relative;  display: flex;}.box3 h2 {  margin-top: 10px;}.box3 p {  margin-top: 10px;  font-size: 15px;}.btnTxt {  position: absolute;  text-align: left;  bottom: 200px;}.btnHead {  position: absolute;  text-align: center;  bottom: 380px;  left: 40px;}.btnHead h2 {  position: absolute;  top: -10px;  font-size: 40px;  right: 0px;}.btnHead h1 {  font-size: 30px;}.red {  color: #ededed;  background-color: #d85d62;  padding-left: 10px;  padding-right: 10px;  padding-top: 2px;  padding-bottom: 2px;  border: 1px #d85d62;  font-size: 15px;  font-family: "Lucida Console", Monaco, monospace;  border-radius: 3px;}.black {  color: #ededed;  background-color: #2d2d2d;  padding-left: 10px;  padding-right: 10px;  padding-top: 2px;  padding-bottom: 2px;  border: 1px #2d2d2d;  border-radius: 3px;}.greenTxt {  color: #377158;}.redTxt {  color: #d85d62;}@font-face {  font-family: "Overpass";  src: url("/assets/fonts/OverpassMono-VariableFont_wght.ttf")    format("truetype");}@font-face {  font-family: "IBM";  src: url("/assets/fonts/IBMPlexMono-Regular.ttf") format("truetype");}.profile-picture {  width: 50px; /* Adjust the size according to your preference */  height: 50px;  border-radius: 50%; /* This makes the image round */  overflow: hidden; /* Hides the parts of the image outside the circle */  margin-right: 10px;}.profile-picture img {  width: 100%; /* Makes sure the image fills the circle */  height: auto;  display: block;}.footer {  display: flex;}.btn {  color: #ededed;}mark {  background-color: #ededed;  color: #2d2d2d;  position: absolute;  top: -20px;  padding-left: 10px;  padding-right: 10px;  right: 100px;  font-family: "Overpass";}.button i {  position: absolute;  left: 5%;}.box2 h3 {  position: absolute;  color: #ededed;  background-color: #2d2d2d;  font-size: 50px;  left: 150px;  bottom: 465px;}.box2 h4 {  position: absolute;  color: #2d2d2d;  font-size: 50px;  left: 150px;  bottom: 500px;}.x {  position: absolute;  left: 600px;}.username {  color: white;}@media only screen and (max-width: 600px) {  :root {    --box-width: 330px;  }  body {    font-family: "Segoe UI", Arial, sans-serif;    margin: 0;    padding: 0;    background: #0a0a0a;    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%201024%201024%22%20width%3D%221024%22%20height%3D%221024%22%20preserveAspectRatio%3D%22none%22%3E%20%3Cstyle%3E%20path%20%7B%20stroke-linecap%3A%20square%3B%20stroke-width%3A%201.01px%3B%20stroke%3A%20%23D3D3D3%3B%20vector-effect%3A%20non-scaling-stroke%3B%20%7D%20%3C%2Fstyle%3E%20%3Cpath%20d%3D%22M%20256%20192%20L%20256%20320%20M%20192%20256%20L%20320%20256%22%20%2F%3E%20%3Cpath%20d%3D%22M%20768%20704%20L%20768%20832%20M%20704%20768%20L%20832%20768%22%20%2F%3E%3C%2Fsvg%3E"),      url("/assets/img/bg.jpg");    background-size: 169px, cover;    background-position: center, left;    background-repeat: repeat, no-repeat;  }  mark {    right: 10px;    bottom: 10px;    font-size: 13px;  }  .box2 h3 {    position: absolute;    left: 30px;    font-size: 35px;    bottom: 300px;  }  .box2 h4 {    position: absolute;    left: 30px;    font-size: 35px;    bottom: 325px;  }  .profile-picture {    width: 40px; /* Adjust the size according to your preference */    height: 40px;    border-radius: 50%; /* This makes the image round */    overflow: hidden; /* Hides the parts of the image outside the circle */    margin-right: 10px;  }  .box1 h1 {    margin: 0;    font-size: 20px;  }  .box1 p {    font-size: 15px;  }  .button {    margin-bottom: 10px;    padding: 5px;    letter-spacing: 2px;    width: 150px;  }  .btnHead {    position: absolute;    text-align: center;    bottom: 270px;    left: 20px;  }  .btnHead h2 {    position: absolute;    font-size: 33px;  }  .btnHead h1 {    font-size: 23px;  }  .btnTxt {    position: absolute;    bottom: 120px;    font-size: 12px;  }  .left {    position: absolute;    top: 250px;  }  .footer {    font-size: 12px;  }  .box-footer2 {    position: absolute;    bottom: 0;    left: -10px;    width: 200px;    font-family: "Overpass";    letter-spacing: 2px;    padding: 3px;  }  .btn {    color: #ededed;    font-size: 13px;  }  .box-content2 img {    width: 185px;    margin-top: 70px;    margin-left: -10px;  }  .red {    font-size: 12px;  }  .black {    font-size: 12px;  }  .box-footer2 i {    display: none;  }  .btnHead i {    display: none;  }  .x {    display: none;  }}
+* {
+  text-transform: lowercase;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+:root {
+  --box-width: 600px;
+}
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #0a0a0a;
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%201024%201024%22%20width%3D%221024%22%20height%3D%221024%22%20preserveAspectRatio%3D%22none%22%3E%20%3Cstyle%3E%20path%20%7B%20stroke-linecap%3A%20square%3B%20stroke-width%3A%201.01px%3B%20stroke%3A%20%23D3D3D3%3B%20vector-effect%3A%20non-scaling-stroke%3B%20%7D%20%3C%2Fstyle%3E%20%3Cpath%20d%3D%22M%20256%20192%20L%20256%20320%20M%20192%20256%20L%20320%20256%22%20%2F%3E%20%3Cpath%20d%3D%22M%20768%20704%20L%20768%20832%20M%20704%20768%20L%20832%20768%22%20%2F%3E%3C%2Fsvg%3E"),
+    url("/assets/img/bg.jpg");
+  background-size: 169px, cover;
+  background-position: center, center;
+  background-repeat: repeat, no-repeat;
+  background-attachment: fixed;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+.box1 {
+  width: var(--box-width);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Box shadow */
+  color: #ededed;
+  background-color: #2d2d2d;
+  border: 1px solid #2d2d2d;
+  border-top-left-radius: 10px;
+  padding-left: 20px;
+  align-items: center;
+  padding-right: 20px;
+  padding-top: 5px;
+  font-family: "Overpass";
+  padding-bottom: 5px;
+  position: relative;
+  display: flex;
+}
+.box1 h1 {
+  margin: 0;
+}
+.box1 p {
+  margin-bottom: 0;
+} /* Styles for Box 2 */
+.box2 {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  width: var(--box-width);
+  background-color: #ededed;
+  border: 1px solid #ccc;
+  padding: 20px;
+  color: #2d2d2d;
+  z-index: 2; /*background-image: url(heart.webp);    background-size: 50%;    background-repeat: no-repeat;    background-position: right top;  */
+  position: relative;
+}
+.box2 h2 {
+  margin-top: 0;
+}
+.left {
+  position: absolute;
+  top: 350px;
+  right: 10px;
+  z-index: 999;
+  display: flex;
+  flex-direction: column;
+}
+.button {
+  margin-bottom: 20px;
+  padding: 11px;
+  font-family: "IBM";
+  text-decoration: none;
+  text-align: right;
+  letter-spacing: 5px;
+  width: 250px;
+  background-color: #2d2d2d;
+  border-radius: 50px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+.button:hover {
+  background-color: #575757;
+  transition: 300ms;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+}
+.box-content2 {
+  margin-right: 160px;
+  bottom: 0px;
+  position: relative;
+}
+.box-footer2 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  font-family: "Overpass";
+  letter-spacing: 2px;
+  background-color: #333;
+  padding: 10px;
+  color: #fff;
+  box-shadow: 0 0 20px 10px rgba(255, 255, 255, 0.7);
+}
+.box-content2 img {
+  width: 317px;
+  margin-top: 5px;
+}
+.box3 {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  width: var(--box-width);
+  color: white;
+  padding-left: 20px; /* Adjusted padding */
+  padding-right: 20px; /* Adjusted padding */
+  margin-bottom: 10px;
+  background-color: #2d2d2d;
+  border: 1px solid #2d2d2d;
+  position: relative;
+  display: flex;
+}
+.box3 h2 {
+  margin-top: 10px;
+}
+.box3 p {
+  margin-top: 10px;
+  font-size: 15px;
+}
+.btnTxt {
+  position: absolute;
+  text-align: left;
+  bottom: 200px;
+}
+.btnHead {
+  position: absolute;
+  text-align: center;
+  bottom: 380px;
+  left: 40px;
+}
+.btnHead h2 {
+  position: absolute;
+  top: -10px;
+  font-size: 40px;
+  right: 0px;
+}
+.btnHead h1 {
+  font-size: 30px;
+}
+.red {
+  color: #ededed;
+  background-color: #d85d62;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  border: 1px #d85d62;
+  font-size: 15px;
+  font-family: "Lucida Console", Monaco, monospace;
+  border-radius: 3px;
+}
+.black {
+  color: #ededed;
+  background-color: #2d2d2d;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  border: 1px #2d2d2d;
+  border-radius: 3px;
+}
+.greenTxt {
+  color: #377158;
+}
+.redTxt {
+  color: #d85d62;
+}
+@font-face {
+  font-family: "Overpass";
+  src: url("/assets/fonts/OverpassMono-VariableFont_wght.ttf")
+    format("truetype");
+}
+@font-face {
+  font-family: "IBM";
+  src: url("/assets/fonts/IBMPlexMono-Regular.ttf") format("truetype");
+}
+.profile-picture {
+  width: 50px; /* Adjust the size according to your preference */
+  height: 50px;
+  border-radius: 50%; /* This makes the image round */
+  overflow: hidden; /* Hides the parts of the image outside the circle */
+  margin-right: 10px;
+}
+.profile-picture img {
+  width: 100%; /* Makes sure the image fills the circle */
+  height: auto;
+  display: block;
+}
+.footer {
+  display: flex;
+}
+.btn {
+  color: #ededed;
+}
+mark {
+  background-color: #ededed;
+  color: #2d2d2d;
+  position: absolute;
+  top: -20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  right: 100px;
+  font-family: "Overpass";
+}
+.button i {
+  position: absolute;
+  left: 5%;
+}
+.box2 h3 {
+  position: absolute;
+  color: #ededed;
+  background-color: #2d2d2d;
+  font-size: 50px;
+  left: 150px;
+  bottom: 465px;
+}
+.box2 h4 {
+  position: absolute;
+  color: #2d2d2d;
+  font-size: 50px;
+  left: 150px;
+  bottom: 500px;
+}
+.x {
+  position: absolute;
+  left: 600px;
+}
+.username {
+  color: white;
+}
+@media only screen and (max-width: 600px) {
+  :root {
+    --box-width: 330px;
+  }
+  body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #0a0a0a;
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%201024%201024%22%20width%3D%221024%22%20height%3D%221024%22%20preserveAspectRatio%3D%22none%22%3E%20%3Cstyle%3E%20path%20%7B%20stroke-linecap%3A%20square%3B%20stroke-width%3A%201.01px%3B%20stroke%3A%20%23D3D3D3%3B%20vector-effect%3A%20non-scaling-stroke%3B%20%7D%20%3C%2Fstyle%3E%20%3Cpath%20d%3D%22M%20256%20192%20L%20256%20320%20M%20192%20256%20L%20320%20256%22%20%2F%3E%20%3Cpath%20d%3D%22M%20768%20704%20L%20768%20832%20M%20704%20768%20L%20832%20768%22%20%2F%3E%3C%2Fsvg%3E"),
+      url("/assets/img/bg.jpg");
+    background-size: 169px, cover;
+    background-position: center, left;
+    background-repeat: repeat, no-repeat;
+  }
+  mark {
+    right: 10px;
+    bottom: 10px;
+    font-size: 13px;
+  }
+  .box2 h3 {
+    position: absolute;
+    left: 30px;
+    font-size: 35px;
+    bottom: 300px;
+  }
+  .box2 h4 {
+    position: absolute;
+    left: 30px;
+    font-size: 35px;
+    bottom: 325px;
+  }
+  .profile-picture {
+    width: 40px; /* Adjust the size according to your preference */
+    height: 40px;
+    border-radius: 50%; /* This makes the image round */
+    overflow: hidden; /* Hides the parts of the image outside the circle */
+    margin-right: 10px;
+  }
+  .box1 h1 {
+    margin: 0;
+    font-size: 20px;
+  }
+  .box1 p {
+    font-size: 15px;
+  }
+  .button {
+    margin-bottom: 10px;
+    padding: 5px;
+    letter-spacing: 2px;
+    width: 150px;
+  }
+  .btnHead {
+    position: absolute;
+    text-align: center;
+    bottom: 270px;
+    left: 20px;
+  }
+  .btnHead h2 {
+    position: absolute;
+    font-size: 33px;
+  }
+  .btnHead h1 {
+    font-size: 23px;
+  }
+  .btnTxt {
+    position: absolute;
+    bottom: 120px;
+    font-size: 12px;
+  }
+  .left {
+    position: absolute;
+    top: 250px;
+  }
+  .footer {
+    font-size: 12px;
+  }
+  .box-footer2 {
+    position: absolute;
+    bottom: 0;
+    left: -10px;
+    width: 200px;
+    font-family: "Overpass";
+    letter-spacing: 2px;
+    padding: 3px;
+  }
+  .btn {
+    color: #ededed;
+    font-size: 13px;
+  }
+  .box-content2 img {
+    width: 185px;
+    margin-top: 70px;
+    margin-left: -10px;
+  }
+  .red {
+    font-size: 12px;
+  }
+  .black {
+    font-size: 12px;
+  }
+  .box-footer2 i {
+    display: none;
+  }
+  .btnHead i {
+    display: none;
+  }
+  .x {
+    display: none;
+  }
+}

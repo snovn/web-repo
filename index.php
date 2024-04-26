@@ -1,23 +1,29 @@
 <?php
 function getUserIP() {
-    $ip = $_SERVER['REMOTE_ADDR'];
-    
-    if (!empty($_SERVER['HTTP_CLIENT_IP']) && filter_var($_SERVER['HTTP_CLIENT_IP'], FILTER_VALIDATE_IP)) {
-        $ip = $_SERVER['HTTP_CLIENT_IP']; // Check for shared clients
-    } elseif (!empty($_SERVER['HTTP_X_FORWARDED_FOR']) && filter_var($_SERVER['HTTP_X_FORWARDED_FOR'], FILTER_VALIDATE_IP)) {
-        $ip = $_SERVER['HTTP_X_FORWARDED_FOR']; // Check for proxies
-    }
+  $ip = $_SERVER['REMOTE_ADDR'];
+  
+  if (!empty($_SERVER['HTTP_CLIENT_IP']) && filter_var($_SERVER['HTTP_CLIENT_IP'], FILTER_VALIDATE_IP)) {
+      $ip = $_SERVER['HTTP_CLIENT_IP']; // Check for shared clients
+  } elseif (!empty($_SERVER['HTTP_X_FORWARDED_FOR']) && filter_var($_SERVER['HTTP_X_FORWARDED_FOR'], FILTER_VALIDATE_IP)) {
+      $ip = $_SERVER['HTTP_X_FORWARDED_FOR']; // Check for proxies
+  }
 
-    return $ip;
+  return $ip;
 }
 
-
+// Function to get IP address details from the API
 function getIPAddressDetails($ip) {
-    $api_key = 'cdd0ff4d3262c5c4ad49f88668948a8f'; // Your API key from the IP geolocation service
-    $url = "http://api.ipstack.com/$ip?access_key=$api_key";
-    $response = file_get_contents($url);
-    $data = json_decode($response, true);
-    return $data;
+  // API endpoint for IP geolocation
+  $api_url = "http://ip-api.com/json/$ip";
+
+  // Fetch data from the API
+  $response = file_get_contents($api_url);
+
+  // Decode JSON response
+  $data = json_decode($response, true);
+
+  // Return the data
+  return $data;
 }
 
 // Get the user's IP address
@@ -31,19 +37,17 @@ $csv_file = 'ip_addresses.csv';
 
 // Check if the CSV file exists, and if not, create it with a header row
 if (!file_exists($csv_file)) {
-    $header = array('IP Address', 'Timestamp', 'Country', 'City');
-    $fp = fopen($csv_file, 'a');
-    fputcsv($fp, $header);
-    fclose($fp);
+  $header = array('IP Address', 'Timestamp', 'Country', 'City');
+  $fp = fopen($csv_file, 'a');
+  fputcsv($fp, $header);
+  fclose($fp);
 }
 
 // Add the user's IP address, timestamp, country, and city to the CSV file
-$data = array($user_ip, date('Y-m-d H:i:s'), $ip_details['country_name'], $ip_details['city']);
+$data = array($user_ip, date('Y-m-d H:i:s'), $ip_details['country'], $ip_details['city']);
 $fp = fopen($csv_file, 'a');
 fputcsv($fp, $data);
 fclose($fp);
-
-// Display a message to the user
 ?>
 <!DOCTYPE html>
 <html lang="en">
